@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Melka — Amamentar também é liberdade</title>
+<meta name="description" content="Camisetas para amamentação com zíperes laterais discretos. Estilo, conforto e liberdade para a vida real." />
+<style>
+:root{
+  --cream:#f6efe5;--paper:#fbf7f1;--choc:#603a2c;--choc2:#3f261e;--rose:#c98e7f;--line:#dccdc0;--ink:#4a3027;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit} button,select{font:inherit}
+.topbar{background:var(--choc);color:#fff;padding:10px 5vw;display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.header{position:sticky;top:0;z-index:20;background:rgba(251,247,241,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:13px 5vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.nav{display:flex;gap:26px;font-size:12px;letter-spacing:.13em;text-transform:uppercase}.logo{text-align:center;color:var(--choc);line-height:.8}.logo img{display:block;width:190px;max-width:32vw;height:auto;margin:auto}.logo small{display:block;font-family:Arial;font-size:8px;letter-spacing:.32em;font-weight:500;margin-top:8px}.actions{justify-self:end;display:flex;gap:12px;align-items:center}.icon{border:0;background:transparent;font-size:20px;cursor:pointer}.badge{background:var(--choc);color:#fff;border-radius:999px;font-size:10px;padding:2px 6px;vertical-align:top}
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;min-height:580px;background:var(--cream)}.hero-copy{padding:72px 8vw 60px 9vw;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:22px}.hero h1{font-family:Georgia,serif;font-size:68px;line-height:.92;margin:0 0 24px;color:var(--choc2);max-width:500px}.heart{color:var(--rose)}.hero p{font-size:14px;line-height:1.7;letter-spacing:.08em;max-width:420px;text-transform:uppercase}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--choc);color:white;border:1px solid var(--choc);padding:14px 24px;border-radius:999px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;cursor:pointer;width:max-content}.btn.alt{background:transparent;color:var(--choc)}.hero-media{background:url('assets/hero.jpg') center/cover no-repeat;min-height:580px;position:relative}.scribble{position:absolute;right:6%;top:14%;font-family:cursive;color:#d7a08e;font-size:32px;transform:rotate(-6deg);max-width:190px;text-align:center}
+.section{padding:64px 5vw}.center{text-align:center}.section h2{font-family:Georgia,serif;font-size:38px;color:var(--choc);margin:0 0 10px}.sub{font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:32px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);padding-bottom:18px}.card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}.card-body{padding:16px 14px 0}.name{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;min-height:30px}.price{font-weight:700;margin:6px 0 12px}.sizes{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.size{border:1px solid var(--line);background:white;border-radius:50%;width:30px;height:30px;cursor:pointer}.size.active{background:var(--choc);color:#fff;border-color:var(--choc)}.card .btn{width:100%;padding:11px;font-size:9px;margin-top:8px}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#f8f1e8}.benefit{padding:28px 25px;border-right:1px solid var(--line);display:flex;gap:12px;align-items:center}.benefit:last-child{border-right:0}.benefit b{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.benefit span{font-size:10px;letter-spacing:.08em;text-transform:uppercase}.benefit .emoji{font-size:28px}
+.story{display:grid;grid-template-columns:.75fr 1fr 1.1fr;background:var(--choc);color:#fff}.story-copy{padding:60px 45px;display:flex;flex-direction:column;justify-content:center}.story-copy h3{font-family:Georgia,serif;font-size:38px;line-height:1.08;margin:0 0 24px}.story img{width:100%;height:100%;object-fit:cover;min-height:420px}.story .btn.alt{border-color:#fff;color:#fff}
+.footer{background:#f5ede3;padding:42px 5vw 18px}.footer-grid{display:grid;grid-template-columns:1fr 2fr 1fr;gap:30px;align-items:center}.newsletter{display:flex;max-width:480px;margin:auto;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}.newsletter input{flex:1;border:0;padding:13px 16px;outline:none}.newsletter button{border:0;background:var(--choc);color:#fff;padding:0 24px;text-transform:uppercase;letter-spacing:.14em;font-size:10px}.social{text-align:right}.legal{text-align:center;border-top:1px solid var(--line);padding-top:18px;margin-top:32px;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
+.drawer{position:fixed;top:0;right:-420px;width:min(92vw,400px);height:100vh;background:#fff;z-index:50;box-shadow:-18px 0 45px rgba(0,0,0,.12);transition:.3s;padding:24px;display:flex;flex-direction:column}.drawer.open{right:0}.drawer h3{font-family:Georgia,serif;font-size:28px;color:var(--choc)}.close{position:absolute;right:18px;top:16px;border:0;background:none;font-size:25px;cursor:pointer}.cart-items{flex:1;overflow:auto}.cart-row{border-bottom:1px solid var(--line);padding:14px 0}.cart-row b{display:block}.cart-row small{color:#7a665e}.total{display:flex;justify-content:space-between;font-weight:700;padding:18px 0}.overlay{position:fixed;inset:0;background:rgba(0,0,0,.25);z-index:40;display:none}.overlay.show{display:block}
+.note{font-size:11px;color:#7a665e;margin-top:10px;line-height:1.45}.size-guide{margin:28px auto 0;max-width:680px;background:#fff;border:1px solid var(--line);padding:24px}.size-guide table{width:100%;border-collapse:collapse;margin-top:15px}.size-guide th,.size-guide td{padding:11px;border-bottom:1px solid var(--line);text-align:center;font-size:12px}.size-guide th{color:var(--choc);text-transform:uppercase;letter-spacing:.1em;font-size:10px}.qty{display:flex;align-items:center;gap:10px;margin-top:9px}.qty button{width:27px;height:27px;border:1px solid var(--line);background:#fff;border-radius:50%;cursor:pointer}
+@media(max-width:900px){.header{grid-template-columns:1fr auto}.nav{display:none}.logo{justify-self:start}.logo img{width:150px;max-width:45vw}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 7vw}.hero h1{font-size:50px}.hero-media{min-height:470px}.products{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2){border-right:0}.story{grid-template-columns:1fr}.story img{min-height:360px}.footer-grid{grid-template-columns:1fr;text-align:center}.social{text-align:center}}
+@media(max-width:560px){.topbar{font-size:8px;padding:8px 4vw}.header{padding:12px 4vw}.logo small{display:none}.hero-copy{padding:45px 6vw}.hero h1{font-size:45px}.hero p{font-size:12px}.hero-media{min-height:390px}.scribble{font-size:25px}.section{padding:48px 4vw}.section h2{font-size:32px}.products{grid-template-columns:1fr 1fr;gap:9px}.card-body{padding:12px 10px 0}.name{font-size:10px}.price{font-size:13px}.card .btn{font-size:8px}.benefits{grid-template-columns:1fr}.benefit{border-right:0;border-bottom:1px solid var(--line)}.footer-grid{gap:20px}.newsletter{flex-direction:column;border-radius:16px}.newsletter button{padding:12px}.story-copy{padding:45px 7vw}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Amamentar também é liberdade ♥</span><span>Envio para todo o Brasil 🚚</span></div>
+<header class="header">
+  <nav class="nav"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+  <a class="logo" href="#inicio"><img src="assets/melka-logo.png" alt="Melka"><small>ROUPAS QUE ACOMPANHAM A SUA FASE MAIS REAL</small></a>
+  <div class="actions"><button class="icon" aria-label="Buscar">⌕</button><button class="icon" aria-label="Conta">♡</button><button class="icon" id="cartBtn" aria-label="Carrinho">👜<span class="badge" id="cartCount">0</span></button></div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <div class="eyebrow">Primeira coleção Melka</div>
+    <h1>Mais<br>vida real<br>por favor.<span class="heart">♥</span></h1>
+    <p>Camisetas pensadas para amamentar com liberdade, estilo e praticidade.</p>
+    <a class="btn" href="#produtos">Conheça a coleção</a>
+  </div>
+  <div class="hero-media"><div class="scribble">mesma mulher,<br>novas histórias ♡</div></div>
+</section>
+
+<section class="section center" id="produtos">
+  <h2>Nossa primeira coleção</h2>
+  <div class="sub">Camisetas para amamentação com zíperes laterais discretos</div>
+  <div class="products">
+    <article class="card" data-name="Milk Bar"><img src="assets/product1.jpg" alt="Camiseta Milk Bar"><div class="card-body"><div class="name">Milk Bar</div><div class="price">R$ 179,00</div><div class="sizes"><button class="size active">P</button><button class="size">M</button><button class="size">G</button><button class="size">GG</button></div><button class="btn add">Adicionar ao carrinho</button></div></article>
+    <article class="card" data-name="Amor em Livre Demanda"><img src="assets/product2.jpg" alt="Camiseta Amor em Livre Demanda"><div class="card-body"><div class="name">Amor em Livre Demanda</div><div class="price">R$ 179,00</div><div class="sizes"><button class="size active">P</button><button class="size">M</button><button class="size">G</button><button class="size">GG</button></div><button class="btn add">Adicionar ao carrinho</button></div></article>
+    <article class="card" data-name="Clube da Madrugada"><img src="assets/product3.jpg" alt="Camiseta Clube da Madrugada"><div class="card-body"><div class="name">Clube da Madrugada</div><div class="price">R$ 179,00</div><div class="sizes"><button class="size active">P</button><button class="size">M</button><button class="size">G</button><button class="size">GG</button></div><button class="btn add">Adicionar ao carrinho</button></div></article>
+    <article class="card" data-name="Florescemos Juntos"><img src="assets/product4.jpg" alt="Camiseta Florescemos Juntos"><div class="card-body"><div class="name">Florescemos Juntos</div><div class="price">R$ 179,00</div><div class="sizes"><button class="size active">P</button><button class="size">M</button><button class="size">G</button><button class="size">GG</button></div><button class="btn add">Adicionar ao carrinho</button></div></article>
+  </div>
+  <div class="size-guide">
+    <h3 style="font-family:Georgia,serif;color:var(--choc);margin:0;text-align:center">Guia de tamanhos</h3>
+    <table><thead><tr><th>Tamanho</th><th>Comprimento</th><th>Largura</th><th>Manga</th></tr></thead><tbody>
+      <tr><td>P</td><td>68 cm</td><td>50 cm</td><td>21 cm</td></tr>
+      <tr><td>M</td><td>71 cm</td><td>55 cm</td><td>24 cm</td></tr>
+      <tr><td>G</td><td>74 cm</td><td>58 cm</td><td>25 cm</td></tr>
+      <tr><td>GG</td><td>77 cm</td><td>60 cm</td><td>26 cm</td></tr>
+    </tbody></table>
+    <p class="note" style="text-align:center">Dica: compare as medidas com uma camiseta que você já ama usar ♡</p>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="benefit"><div class="emoji">🚚</div><div><b>Envio para</b><span>todo o Brasil</span></div></div>
+  <div class="benefit"><div class="emoji">▣</div><div><b>Pagamento seguro</b><span>Pix, cartão e boleto*</span></div></div>
+  <div class="benefit"><div class="emoji">📦</div><div><b>Troca fácil</b><span>e sem complicação*</span></div></div>
+  <div class="benefit"><div class="emoji">♡</div><div><b>Atendimento</b><span>humano e real</span></div></div>
+</section>
+
+<section class="story" id="sobre">
+  <div class="story-copy"><h3>Roupas para todas as suas fases. <span class="heart">♥</span></h3><p>Porque ser mãe não apaga quem você é. A Melka nasceu para acompanhar a amamentação com praticidade, conforto e uma estética que continua sendo sua.</p><a class="btn alt" href="#contato">Sobre a Melka</a></div>
+  <img src="assets/detail.jpg" alt="Detalhe do zíper lateral da camiseta">
+  <img src="assets/story.jpg" alt="Mãe amamentando com camiseta Melka">
+</section>
+</main>
+
+<footer class="footer" id="contato">
+  <div class="footer-grid"><div class="logo"><img src="assets/melka-logo.png" alt="Melka"><small>ROUPAS QUE ACOMPANHAM A SUA FASE MAIS REAL</small></div><div><div class="sub center" style="margin-bottom:12px">Receba novidades da Melka</div><form class="newsletter" onsubmit="event.preventDefault(); alert('Cadastro de demonstração — integraremos o formulário na versão publicada.');"><input type="email" placeholder="Seu e-mail" required><button>Eu quero</button></form></div><div class="social">Instagram · TikTok · Pinterest</div></div>
+  <div class="legal">Melka · Amamentar também é liberdade · Brasil · 2026</div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer"><button class="close" id="closeCart">×</button><h3>Seu carrinho</h3><div class="cart-items" id="cartItems"><p class="note">Seu carrinho está vazio.</p></div><div class="total"><span>Total</span><span id="cartTotal">R$ 0,00</span></div><button class="btn" style="width:100%" onclick="alert('Checkout de demonstração. O Pix/cartão/frete serão conectados na etapa de publicação.')">Finalizar compra</button><div class="note">* Esta versão é um protótipo funcional do visual. Pagamentos, cálculo de frete e política de troca ainda precisam ser conectados ao provedor real da loja.</div></aside>
+
+<script>
+const cart=JSON.parse(localStorage.getItem('melkaCart')||'[]'); const drawer=document.getElementById('drawer'), overlay=document.getElementById('overlay');
+function money(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function openCart(){drawer.classList.add('open');overlay.classList.add('show')}
+function closeCart(){drawer.classList.remove('open');overlay.classList.remove('show')}
+document.getElementById('cartBtn').onclick=openCart;document.getElementById('closeCart').onclick=closeCart;overlay.onclick=closeCart;
+document.querySelectorAll('.sizes').forEach(group=>group.addEventListener('click',e=>{if(e.target.classList.contains('size')){group.querySelectorAll('.size').forEach(b=>b.classList.remove('active'));e.target.classList.add('active')}}));
+document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{const card=btn.closest('.card');const name=card.dataset.name,size=card.querySelector('.size.active').textContent;const found=cart.find(x=>x.name===name&&x.size===size);if(found)found.qty++;else cart.push({name,size,price:179,qty:1});saveCart();renderCart();openCart()}));
+function saveCart(){localStorage.setItem('melkaCart',JSON.stringify(cart))}
+function renderCart(){document.getElementById('cartCount').textContent=cart.reduce((a,b)=>a+(b.qty||1),0);const box=document.getElementById('cartItems');box.innerHTML=cart.length?'':`<p class="note">Seu carrinho está vazio.</p>`;cart.forEach((x,i)=>{x.qty=x.qty||1;const row=document.createElement('div');row.className='cart-row';row.innerHTML=`<b>${x.name}</b><small>Tamanho ${x.size}</small><div class="qty"><button onclick="changeQty(${i},-1)">−</button><span>${x.qty}</span><button onclick="changeQty(${i},1)">+</button><span style="margin-left:auto">${money(x.price*x.qty)}</span></div><button style="border:0;background:none;cursor:pointer;padding:8px 0;color:#7a665e" onclick="removeItem(${i})">remover</button>`;box.appendChild(row)});document.getElementById('cartTotal').textContent=money(cart.reduce((a,b)=>a+b.price*(b.qty||1),0))}
+window.changeQty=(i,d)=>{cart[i].qty=(cart[i].qty||1)+d;if(cart[i].qty<=0)cart.splice(i,1);saveCart();renderCart()}
+window.removeItem=i=>{cart.splice(i,1);saveCart();renderCart()}
+renderCart()
+</script>
+</body>
+</html>
