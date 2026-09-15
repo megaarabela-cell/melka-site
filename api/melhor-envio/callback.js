@@ -37,12 +37,9 @@ module.exports = async (req, res) => {
       return res.status(response.status).json(data);
     }
 
-    return res.status(200).json({
-      message: 'Melhor Envio autorizado com sucesso.',
-      access_token: data.access_token,
-      refresh_token: data.refresh_token,
-      expires_in: data.expires_in
-    });
+    return res.status(200).send(
+  'Melhor Envio autorizado com sucesso. Você já pode fechar esta página.'
+);
   } catch (error) {
     return res.status(500).json({
       message: 'Erro ao conectar com o Melhor Envio.',
